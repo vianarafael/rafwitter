@@ -65,9 +65,9 @@ export default function Signup() {
                       <ErrorMessage name="email" component={'div'} />
                       <Field name="name" type="text" placeholder="Name" />
                       <ErrorMessage name="name" component={'div'} />
-                      <Field name="password" type="text" placeholder="Password" />
+                      <Field name="password" type="password" placeholder="Password" />
                       <ErrorMessage name="password" component={'div'} />
-                      <Field name="confirmPassword" type="text" placeholder="Confirm Password" />
+                      <Field name="confirmPassword" type="password" placeholder="Confirm Password" />
                       <ErrorMessage name="confirmPassword" component={'div'} />
                       <button type="submit">Signup</button>
                   </Form>
