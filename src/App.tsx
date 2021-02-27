@@ -1,6 +1,7 @@
 import { ApolloClient, ApolloProvider, HttpLink, InMemoryCache } from '@apollo/client'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom' 
 
+import Login from './pages/Login'
 import Signup from './pages/Signup'
 import Landing from './components/Landing'
 import { setContext } from 'apollo-link-context'
@@ -36,6 +37,9 @@ function App() {
           </Route>
           <Route exact path="/signup">
             <Signup />
+          </Route>
+          <Route>
+            <Login />
           </Route>
         </Switch>
       </Router>
